@@ -48,6 +48,7 @@ router.get(
   ]),
   userController.getSingleUser
 );
+
 /**
  * @route PUT /users/:id
  * @description Update user profile
