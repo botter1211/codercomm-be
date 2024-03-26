@@ -7,7 +7,6 @@ const commentController = {};
 const calculateCommentCount = async (postId) => {
   const commentCount = await Comment.countDocuments({
     post: postId,
-    isDeleted: false,
   });
   await Post.findByIdAndUpdate(postId, { commentCount });
 };
